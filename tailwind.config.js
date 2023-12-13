@@ -13,7 +13,8 @@ export default {
         "9xl": "1366px"
       },
       spacing: {
-        "10per": "10%"
+        "10per": "10%",
+        big: "530px"
       }
     },
   },
