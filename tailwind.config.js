@@ -7,7 +7,8 @@ export default {
   theme: {
     extend: {
       colors:{
-        main: "#0c0c1d"
+        main: "#0c0c1d",
+        hero: "#ffffff09"
       },
       maxWidth: {
         "9xl": "1366px"
@@ -15,6 +16,9 @@ export default {
       spacing: {
         "10per": "10%",
         big: "530px"
+      },
+      fontSize: {
+        huge: "250px"
       }
     },
   },

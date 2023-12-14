@@ -31,7 +31,7 @@ const Sidebar = ()=>{
     const [isOpen, setIsOpen] = useState(false)
     const links = ["Homepage", "Services", "Portfolio", "Contact"]
     return(
-        <motion.div className=" bg-white flex flex-col items-center justify-center fixed top-0 text-black"
+        <motion.div className=" bg-white flex flex-col items-center justify-center fixed top-0 text-black z-20"
          variants={variants} 
          animate={isOpen ? "open" : "close"}
         >

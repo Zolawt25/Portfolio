@@ -22,7 +22,7 @@ const variants = {
 
 const Hero = () => {
   return (
-    <div className="px-10per flex items-center">
+    <div className="px-10per flex items-center z-10 relative overflow-hidden">
       <motion.div className="flex-1"
       variants={variants}
       initial="hidden"
@@ -35,9 +35,14 @@ const Hero = () => {
             <a href="#Contact" className="bg-white text-main px-3 py-4 text-sm rounded-xl">Contact Me</a>
         </motion.div>
       </motion.div>
+      <motion.div className=" absolute -bottom-16 text-huge bg-transparent whitespace-nowrap text-hero"
+       initial={{x: "89vw"}}
+       animate={{x: "-220vw"}}
+       transition={{delay: 1.3, duration: 50, repeat: Infinity, repeatType: "mirror"}}
+      >Full Stack Web Developer</motion.div>
       <div className="flex-1 flex">
-        <div className="h-full w-big bg-slate-400">
-            <img src="/hero.png" alt="Zelalem"/>
+        <div className="h-full w-big">
+            <img src="/hero.png" alt="Zelalem's picture"/>
         </div>
       </div>
     </div>
