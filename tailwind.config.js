@@ -8,17 +8,20 @@ export default {
     extend: {
       colors:{
         main: "#0c0c1d",
-        hero: "#ffffff09"
+        hero: "#ffffff09",
+        secondery: "#111132"
       },
       maxWidth: {
         "9xl": "1366px"
       },
       spacing: {
         "10per": "10%",
-        big: "530px"
+        big: "530px",
+        font: "100px"
       },
       fontSize: {
-        huge: "250px"
+        huge: "250px",
+        big: "100px"
       }
     },
   },
