@@ -10,7 +10,8 @@ export default {
         main: "#0c0c1d",
         hero: "#ffffff09",
         secondery: "#111132",
-        btnColor: "#FFA500"
+        btnColor: "#FFA500",
+        textColor: "#d3d3d3"
       },
       maxWidth: {
         "9xl": "1366px"

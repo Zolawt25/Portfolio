@@ -1,4 +1,5 @@
-import { motion } from "framer-motion";
+import { motion, useInView } from "framer-motion";
+import { useRef } from "react";
 
 
 
@@ -9,11 +10,12 @@ import { motion } from "framer-motion";
 const vatiants = {
     hidden:{
         x: "-100vh",
-        y: 0.1,
+        y: 100,
         opacity: 0
     },
     visible: {
         x: 0,
+        y: 0,
         opacity: 1,
         transition: {
             duration: 1.5,
@@ -23,13 +25,17 @@ const vatiants = {
 }
 
 const Services = () => {
+  const ref = useRef()
+  const inView = useInView(ref, {margin: "-200px"})
+
   return (
     <motion.div className="flex flex-col justify-between items-center h-full w-full overflow-hidden"
      variants={vatiants}
      initial="hidden"
-     whileInView="visible"
+     animate={inView && "visible"}
+     ref={ref}
     >
-      <motion.div className="flex justify-end items-center gap-3 h-24 w-full" variants={vatiants}>
+      <motion.div className="flex justify-end items-center gap-3 h-20 w-full" variants={vatiants}>
         <p  className=" text-end font-extralight text-gray-300">I focus on helping your brand grow <br/> and move forward</p>
         <hr  className=" w-80"/>
       </motion.div>

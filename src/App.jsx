@@ -4,6 +4,7 @@ import './App.css'
 import Hero from './components/Hero'
 import Navbar from './components/Navbar'
 import Parallax from './components/Parallax'
+import Portfolio from './components/Portfolio'
 import Services from './components/Services'
 // import { motion, AnimatePresence } from "framer-motion";
 
@@ -13,7 +14,7 @@ import Services from './components/Services'
 function App() {
 
   return (
-    <div className="text-white">
+    <div className=" text-textColor bg-main">
       <section className='fullVh' id="Homepage" style={{background: "linear-gradient(180deg, #111132, #0c0c1d)"}}>
         <Navbar/>
         <Hero/>
@@ -27,8 +28,7 @@ function App() {
       <section className='fullVh' id="Portfolio" style={{background: "linear-gradient(180deg, #111132, #505064)"}}>
         <Parallax type="Portfolio"/>
       </section>
-      <section className='fullVh bg-main'>portfolio1</section>
-      <section className='fullVh bg-main'>portfolio3</section>
+      <Portfolio/>
       <section className='fullVh bg-main' id="Contact">contact</section>
     </div>
   )
