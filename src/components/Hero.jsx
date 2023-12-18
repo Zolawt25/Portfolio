@@ -35,7 +35,7 @@ const Hero = () => {
             <a href="#Contact" className="bg-white text-main px-3 py-4 text-sm rounded-xl">Contact Me</a>
         </motion.div>
       </motion.div>
-      <motion.div className=" absolute -bottom-16 text-huge bg-transparent whitespace-nowrap text-hero"
+      <motion.div className=" absolute -bottom-16 text-huge bg-transparent whitespace-nowrap text-hero cursor-default"
        initial={{x: "89vw"}}
        animate={{x: "-220vw"}}
        transition={{delay: 1.3, duration: 50, repeat: Infinity, repeatType: "mirror"}}
