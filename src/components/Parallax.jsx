@@ -19,7 +19,7 @@ const Parallax = ({type}) => {
   return (
     <div ref={ref} className="h-full w-full flex items-center justify-center relative text-big overflow-hidden">
       <motion.p style={{y: yText}}>
-        {type === "Services" ? "What I Do?" : "What I Did?"}
+        {type === "Services" ? "What I Do?" : "My Projects"}
       </motion.p>
       <motion.div className="bg-[url('/mountains.png')] h-full w-full absolute bg-bottom bg-cover z-30"></motion.div>
       <motion.div className={`${type === "Services" ?'bg-[url("/planets.png")]' : 'bg-[url("/sun.png")]'} h-full w-full absolute bg-bottom bg-cover z-20`}

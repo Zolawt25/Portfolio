@@ -1,6 +1,7 @@
 // import { useState } from 'react';
 // import { motion } from "framer-motion";
 import './App.css'
+import Contact from './components/Contact'
 import Hero from './components/Hero'
 import Navbar from './components/Navbar'
 import Parallax from './components/Parallax'
@@ -29,7 +30,9 @@ function App() {
         <Parallax type="Portfolio"/>
       </section>
       <Portfolio/>
-      <section className='fullVh bg-main' id="Contact">contact</section>
+      <section className='fullVh bg-main' id="Contact">
+        <Contact/>
+      </section>
     </div>
   )
 }
