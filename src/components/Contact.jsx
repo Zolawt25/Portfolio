@@ -1,6 +1,6 @@
 import { useRef, useState } from "react"
 import { motion, useInView } from "framer-motion";
-
+import emailjs from '@emailjs/browser';
 
 
 
@@ -22,8 +22,23 @@ const variantes = {
 }
 
 const Contact = () => {
+  const [error, setError] = useState(false)
+  const [success, setSuccess] = useState(false)
   const ref = useRef()
-  const isInView = useInView(ref, {margin: "50px"})
+  const formRef = useRef()
+
+  const isInView = useInView(ref, {margin: "-100px"})
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_8ahm1fq', 'template_vmprx6c', formRef.current, '4JCEX2HkzqokmIDeb')
+      .then((result) => {
+          setSuccess(true)
+      }, (error) => {
+          setError(true)
+      });
+  };
 
   return (
     <motion.div className="w-full h-full flex items-center justify-center"
@@ -46,12 +61,12 @@ const Contact = () => {
             </motion.div>
         </motion.div>
         <motion.div className="flex-1 flex w-big relative" variants={variantes}>
-            <motion.div className="flex items-center justify-center absolute m-auto"
+            <motion.div className="flex items-center justify-center absolute m-auto -z-10"
               initial={{opacity: 1}}
               animate={isInView &&{opacity: 0}}
               transition={{delay: 3, duration: 1}}
             >
-                <svg width="400px" height="400px" viewBox="0 0 32.666 32.666" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg width="400px" height="400px" viewBox="10 -2 22.666 44.6" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <motion.path 
                       initial={{pathLength: 0}}
                       animate={isInView && {pathLength: 1}}
@@ -72,14 +87,18 @@ const Contact = () => {
                 </svg>
             </motion.div>
             <motion.form className="flex flex-col gap-y-3 w-full"
+              ref={formRef}
+              onSubmit={sendEmail}
               initial={{opacity: 0}}
               animate={isInView &&{opacity: 1}}
               transition={{delay: 4, duration: 1}}
             >
-                <input type="text" placeholder="Name" required  className="bg-transparent border-gray-300 border placeholder:text-gray-200 placeholder:text-sm p-1 outline-none rounded-sm"/>
-                <input type="email" placeholder="Email" required className="bg-transparent border-gray-300 border placeholder:text-gray-200 placeholder:text-sm p-1 outline-none rounded-sm"/>
-                <textarea cols="30" rows="5" placeholder="Message" required className="bg-transparent border-gray-300 border placeholder:text-gray-200 placeholder:text-sm p-1 outline-none rounded-sm"></textarea>
+                <input type="text" placeholder="Name" required  className="bg-transparent border-gray-300 border placeholder:text-gray-200 placeholder:text-sm p-1 outline-none rounded-sm" name="name"/>
+                <input type="email" placeholder="Email" required className="bg-transparent border-gray-300 border placeholder:text-gray-200 placeholder:text-sm p-1 outline-none rounded-sm" name="email"/>
+                <textarea cols="30" rows="5" placeholder="Message" required className="bg-transparent border-gray-300 border placeholder:text-gray-200 placeholder:text-sm p-1 outline-none rounded-sm" name="message"></textarea>
                 <button className="bg-btnColor text-sm font-bold text-main py-2">submit</button>
+                {error && "error"}
+                {success && "Success"}
             </motion.form>
         </motion.div>
       </motion.div>

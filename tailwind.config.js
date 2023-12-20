@@ -18,7 +18,8 @@ export default {
       },
       spacing: {
         "10per": "10%",
-        big: "530px",
+        big: "660px",
+        mid: "500px",
         font: "100px"
       },
       fontSize: {

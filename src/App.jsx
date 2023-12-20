@@ -16,7 +16,7 @@ function App() {
 
   return (
     <div className=" text-textColor bg-main">
-      <section className='fullVh' id="Homepage" style={{background: "linear-gradient(180deg, #111132, #0c0c1d)"}}>
+      <section className='fullVh relative' id="Homepage" style={{background: "linear-gradient(180deg, #111132, #0c0c1d)"}}>
         <Navbar/>
         <Hero/>
       </section>
