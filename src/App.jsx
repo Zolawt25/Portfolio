@@ -20,7 +20,7 @@ function App() {
         <Navbar/>
         <Hero/>
       </section>
-      <section className='fullVh' id="Services" style={{background: "linear-gradient(180deg, #111132, #0c0c1d)"}}>
+      <section className='fullVh overflow-x-hidden' id="Services" style={{background: "linear-gradient(180deg, #111132, #0c0c1d)"}}>
         <Parallax type="Services"/>
       </section>
       <section className='fullVh overflow-hidden' style={{background: "linear-gradient(180deg, #111132, #0c0c1d)"}}>

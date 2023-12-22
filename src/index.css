@@ -18,5 +18,5 @@ html{
     scroll-behavior: smooth;
 }
 .fullVh{
-    @apply h-screen snap-center
+    @apply h-screen snap-center overflow-x-hidden
 }

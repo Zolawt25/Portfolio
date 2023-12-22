@@ -47,9 +47,9 @@ const Contact = () => {
       animate={"visible"}
       ref={ref}
     >
-      <motion.div className="flex gap-12 items-center" variants={variantes}>
+      <motion.div className="flex mt-20 sm:mt-0 flex-col lg:flex-row text-center lg:text-left gap-5 sm:gap-12 items-center" variants={variantes}>
         <motion.div className="flex-1" variants={variantes}>
-            <motion.p className="text-6xl font-bold" variants={variantes}>Let's Work<br/> together</motion.p>
+            <motion.p className=" text-4xl md:text-6xl font-bold" variants={variantes}>Let's Work<br/> together</motion.p>
             <motion.div variants={variantes}>
                 <p className="mt-4 text-sm"><b>Mail:</b><br/>zelalemt538@gmail.com</p>
             </motion.div>
@@ -60,8 +60,8 @@ const Contact = () => {
                 <p className="mt-4 text-sm"><b>Phone:</b><br/>+251 909242510</p>
             </motion.div>
         </motion.div>
-        <motion.div className="flex-1 flex w-big relative" variants={variantes}>
-            <motion.div className="flex items-center justify-center absolute m-auto -z-10"
+        <motion.div className="flex-1 flex w-xs sm:w-big relative" variants={variantes}>
+            <motion.div className="flex items-center justify-center absolute -left-8 sm:left-24 lg:left-0 m-auto -z-10"
               initial={{opacity: 1}}
               animate={isInView &&{opacity: 0}}
               transition={{delay: 3, duration: 1}}

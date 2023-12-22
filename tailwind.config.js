@@ -19,9 +19,11 @@ export default {
       spacing: {
         "10per": "10%",
         "5per": "5%",
+        "screen": "90vh",
         big: "500px",
         mid: "400px",
         sm: "320px",
+        xs: "235px",
         font: "100px"
       },
       fontSize: {
@@ -30,5 +32,7 @@ export default {
       }
     },
   },
-  plugins: [],
+  plugins: [
+    
+  ],
 }

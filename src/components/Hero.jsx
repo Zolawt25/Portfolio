@@ -4,8 +4,6 @@ import { motion } from "framer-motion";
 
 
 
-
-
 const variants = {
     hidden: {
         x: "-100vw"
@@ -41,11 +39,6 @@ const Hero = () => {
        transition={{delay: 1.3, duration: 50, repeat: Infinity, repeatType: "mirror"}}
       >Full Stack Web Developer</motion.div>
       <img src="/public/Zelalem.png" alt="Zelalem's picture" className=" w-sm absolute bottom-0 sm:w-sm md:right-0 md:h-auto md:w-big"/>
-      {/* <div className="flex-1 flex items-center justify-center">
-        <div className="md:h-big flex mb-big sm:w-mid md:mb-32 h-1/2 md:w-mid">
-            <img src="/public/Zelalem.png" alt="Zelalem's picture" className="w-big h-96 md:h-auto md:w-mid lg:w-full"/>
-        </div>
-      </div> */}
     </div>
   )
 }
