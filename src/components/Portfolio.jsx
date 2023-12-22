@@ -6,13 +6,17 @@ import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 
 
 
+import doc from "../assets/doch.png"
+import food from "../assets/all foods.png"
+import touring from "../assets/touring.png"
+
 
 
 const items = [
     {
         id: 1,
         title: "Doctors Appointment",
-        img: "/public/assets/doch.png",
+        img: doc,
         desc: "Welcome to our doctors appointment website, where you can easily schedule and manage your medical appointments with just a few clicks. Our user-friendly platform allows you to search for available doctors, view their profiles, and book appointments at your convenience. The website is built using the MERN stack (MongoDB, Express.js, React.js, and Node.js), ensuring a modern and intuitive user experience. YOU CAN CHECK THE WEBSITE USING THE LINK!",
         link: "https://doctors-appointment-azure.vercel.app",
         deployed: true
@@ -20,7 +24,7 @@ const items = [
     {
         id: 2,
         title: "Food Menu",
-        img: "/public/assets/all foods.png",
+        img: food,
         desc: "Savor the moment with our Food Menu Website—an exquisite collection of culinary delights awaits! Dive into a symphony of flavors, from tantalizing appetizers to mouthwatering mains and heavenly desserts. Explore our menu, where every dish is a masterpiece, and every click is a journey into gastronomic bliss. Bon appétit awaits you! This website is built using reactjs library ensuring a modern and intuitive user experience.",
         link: "https://github.com/Zolawt25/Food-Menu",
         deployed: false
@@ -28,7 +32,7 @@ const items = [
     {
         id: 3,
         title: "Touring",
-        img: "/public/assets/touring.png",
+        img: touring,
         desc: "Welcome to Touring, your ultimate guide to unforgettable travel experiences around the world.        Touring utilizes the MERN stack (MongoDB, Express.js, React.js, and Node.js) to provide users with a seamless online traveling experience. Users can create an account and securely log in to access additional features such as commenting and rating our tour.",
         link: "https://github.com/Zolawt25/Touring",
         deployed: false

@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-
+import hero from "../assets/Zelalem.png"
 
 
 
@@ -38,7 +38,7 @@ const Hero = () => {
        animate={{x: "-220vw"}}
        transition={{delay: 1.3, duration: 50, repeat: Infinity, repeatType: "mirror"}}
       >Full Stack Web Developer</motion.div>
-      <img src="/public/assets/Zelalem.png" alt="Zelalem's picture" className=" w-sm absolute bottom-0 sm:w-sm md:right-0 md:h-auto md:w-big"/>
+      <img src={hero} alt="Zelalem's picture" className=" w-sm absolute bottom-0 sm:w-sm md:right-0 md:h-auto md:w-big"/>
     </div>
   )
 }
