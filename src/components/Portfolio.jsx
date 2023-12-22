@@ -12,7 +12,7 @@ const items = [
     {
         id: 1,
         title: "Doctors Appointment",
-        img: "/public/doch.png",
+        img: "/doch.png",
         desc: "Welcome to our doctors appointment website, where you can easily schedule and manage your medical appointments with just a few clicks. Our user-friendly platform allows you to search for available doctors, view their profiles, and book appointments at your convenience. The website is built using the MERN stack (MongoDB, Express.js, React.js, and Node.js), ensuring a modern and intuitive user experience. YOU CAN CHECK THE WEBSITE USING THE LINK!",
         link: "https://doctors-appointment-azure.vercel.app",
         deployed: true
@@ -20,7 +20,7 @@ const items = [
     {
         id: 2,
         title: "Food Menu",
-        img: "/public/all foods.png",
+        img: "/all foods.png",
         desc: "Savor the moment with our Food Menu Website—an exquisite collection of culinary delights awaits! Dive into a symphony of flavors, from tantalizing appetizers to mouthwatering mains and heavenly desserts. Explore our menu, where every dish is a masterpiece, and every click is a journey into gastronomic bliss. Bon appétit awaits you! This website is built using reactjs library ensuring a modern and intuitive user experience.",
         link: "https://github.com/Zolawt25/Food-Menu",
         deployed: false
@@ -28,7 +28,7 @@ const items = [
     {
         id: 3,
         title: "Touring",
-        img: "/public/touring.png",
+        img: "/touring.png",
         desc: "Welcome to Touring, your ultimate guide to unforgettable travel experiences around the world.        Touring utilizes the MERN stack (MongoDB, Express.js, React.js, and Node.js) to provide users with a seamless online traveling experience. Users can create an account and securely log in to access additional features such as commenting and rating our tour.",
         link: "https://github.com/Zolawt25/Touring",
         deployed: false
