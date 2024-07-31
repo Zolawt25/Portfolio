@@ -1,12 +1,11 @@
 # Portfolio Website
 
-This is a modern portfolio website built with React, styled using Tailwind CSS, and animated with Framer Motion. It showcases projects, skills, and experiences, providing an interactive and visually appealing way to present yourself to potential employers or clients.
+This is a modern portfolio website built with React, styled using Tailwind CSS, and animated with Framer Motion. It showcases my projects, skills, and experiences, providing an interactive and visually appealing way to present myself to potential employers or clients.
 
 ## Features
 
 - Responsive design
 - Smooth animations with Framer Motion
-- Dark mode support
 - Project showcase
 - Skills and experiences display
 - Contact form
