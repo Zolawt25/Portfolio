@@ -38,7 +38,7 @@ const Hero = () => {
        animate={{x: "-220vw"}}
        transition={{delay: 1.3, duration: 50, repeat: Infinity, repeatType: "mirror"}}
       >Full Stack Web Developer</motion.div>
-      <img src={hero} alt="Zelalem's picture" className=" w-[220px] absolute bottom-0 md:right-[0px] lg:right-[100px] md:h-auto md:w-[420px]"/>
+      <img src={hero} alt="Zelalem's picture" className=" w-[300px] sm:w-[200px] absolute bottom-0 md:right-[0px] lg:right-[100px] md:h-auto md:w-[420px]"/>
     </div>
   )
 }

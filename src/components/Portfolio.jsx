@@ -72,12 +72,12 @@ const Single = ({item}) =>{
     const num = isSmall ? 0 : -750
     const y = useTransform(scrollYProgress, [0, 1], [num, 750])
     return( 
-      <section className="fullVh overflow-hidden bg-main">
+      <section className="fullVh overflow-hidden bg-main z-50">
         <div className="flex flex-col md:flex-row items-center justify-center md:justify-normal w-full h-full px-10per gap-4 max-w-[1400px] max-h-[800px]">
           <motion.div className="flex md:flex-1  overflow-hidden md:w-1/2 md:rounded-xl pt-20 md:pt-0" ref={ref}>
             <img src={item.img} alt={item.title} className=" object-contain md:object-cover"/>
           </motion.div>
-          <motion.div className="flex-1 text-center md:text-left" 
+          <motion.div className="flex-1 text-center md:text-left z-20" 
            style={{y:y}}
 
            >
@@ -101,7 +101,7 @@ const Portfolio = () => {
   })
   return (
     <div ref={ref} className="relative">
-      <div className="sticky pt-screen top-0 left-0 text-center text-btnColor md:pt-12">
+      <div className="sticky pt-[85vh] top-0 left-0 text-center text-btnColor md:pt-12 z-20">
         <p className=" text-4xl">Featured Works</p>
         <motion.div style={{scaleX: scaleX}} className="h-3 bg-white"></motion.div>
       </div>
