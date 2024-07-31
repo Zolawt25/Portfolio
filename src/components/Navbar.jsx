@@ -12,7 +12,7 @@ import { FaLinkedin } from "react-icons/fa";
 
 const Navbar = () => {
   return (
-    <div className=" h-20 w-full absolute top-0 z-20">
+    <div className=" h-20 w-full absolute top-0 z-20 overflow-hidden">
       <Sidebar/>
       <div className="flex items-center justify-end m-auto px-10per h-full md:justify-between">
         <motion.span className="font-bold hidden md:block"

@@ -38,7 +38,7 @@ const Services = () => {
 },[innerWidth])
 
   return (
-    <motion.div className="flex flex-col md:justify-between items-center h-full w-full overflow-y-scroll no-scrollbar lg:overflow-hidden"
+    <motion.div className="flex flex-col md:justify-between items-center h-full w-full overflow-y-scroll no-scrollbar lg:overflow-hidden max-w-[1400px] max-h-[800px]"
     //  variants={vatiants}
      initial="hidden"
      animate={isSmall ? "visible" : inView && "visible"}
