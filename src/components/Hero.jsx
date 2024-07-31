@@ -21,7 +21,7 @@ const variants = {
 const Hero = () => {
   return (
     <div className="px-5per sm:px-10per flex flex-col md:flex-row items-center z-10 relative overflow-hidden h-full max-w-[1400px] w-screen max-h-[800px]">
-      <motion.div className="flex-1 h-1/2 pt-24 md:pt-12"
+      <motion.div className="flex-1 h-1/2 pt-24 md:pt-12 z-50"
       variants={variants}
       initial="hidden"
       animate="visible"
